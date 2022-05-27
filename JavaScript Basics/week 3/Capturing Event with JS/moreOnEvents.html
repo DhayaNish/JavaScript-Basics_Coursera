@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Basics</title>
+</head>
+
+<body>
+    <h1>more on events</h1>
+
+    <form method="get">
+        <label>
+            Your Name:<input type="text" name="name">
+        </label>
+        <input type="submit">
+    </form>
+
+    <script>
+        var myForm = document.querySelector("a");
+        //function declertaion
+        myForm.addEventListener('submit', function(e) {
+            //preventing event
+            e.preventDefault();
+
+            var formData = document.querySelector('input').value;
+            alert(formData);
+        });
+    </script>
+</body>
+
+</html>

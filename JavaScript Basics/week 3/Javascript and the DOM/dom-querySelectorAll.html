@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Examples</title>
+</head>
+
+<body>
+    <h1>Query Selector</h1>
+    <div id="special">
+        <p>Here is a paragraph</p>
+        <p>Here is a another paragraph</p>
+        <p>Here is a one another paragraph</p>
+    </div>
+    <script>
+        //#special -> id , .cheese -> sub class of Id
+        var queryAll = document.querySelectorAll('#special p');
+        for (var i = 0; i < queryAll.length; i++) {
+            queryAll[i].style.color = "red";
+            console.log(queryAll);
+        }
+        //queryAll.style.color = "blue";
+        //to check in console
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope in JS</title>
+</head>
+
+<body>
+    <h1>use strict</h1>
+    <p>helloooooo</p>
+    <p>Everyone!</p>
+    <p>All are fine!</p>
+
+    <script>
+        //function created
+        (function() {
+            //use strict -> used to find undefined "var" errors
+            "use strict";
+            myPar = document.querySelectorAll('p');
+            for (var i = 0; i < myPar.length; i++) {
+                myPar[i].style.color = "red";
+            }
+        }());
+        //without function call , the function is running. Because of "()" at the end of function
+
+        //In head section import <strict src="script22.js defer"></strict>
+    </script>
+    <script src="script22.js"></script>
+
+</body>
+
+</html>

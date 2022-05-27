@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge</title>
+</head>
+
+<body>
+    <p>my paragraph</p>
+    <div>
+        <p>Here is my first paragraph</p>
+    </div>
+    <button>Add Button</button>
+    <button>Remove Button</button>
+    <h1>challenge 25</h1>
+    <script>
+        //challenge 25
+        var myDiv = document.createElement('div');
+        var addBtn = document.querySelectorAll('button')[0];
+        var rmvBtn = document.querySelectorAll("button")[1];
+
+        addBtn.addEventListener('click', function() {
+            var myTag = document.createElement('p');
+            var myText = document.createTextNode("i'm a new parah");
+            myTag.appendChild(myText);
+
+            myDiv.appendChild(myTag);
+        });
+
+        rmvBtn.addEventListener('click', function() {
+            var allPar = document.querySelectorAll('p');
+            myDiv.removeChild(myDiv.children[allPar.length - 1]);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Examples</title>
+</head>
+
+<body>
+    <h1>getElementByTagName</h1>
+    <p>Here is a paragraph</p>
+    <p>Here is a another paragraph</p>
+    <p>Here is a one another paragraph</p>
+    <script>
+        var myParagraph = document.getElementsByTagName("p");
+        //cannot give color for multiple <p> in a single line so we are using for loop
+        //document.getElementById("any id name").style.color="blue"; -> not working for multiple lines
+        //so, we are using this for loop
+        for (var i = 0; i < myParagraph.length; i++) {
+            myParagraph[i].style.color = "green";
+            console.log(`this is element ${i}`);
+        }
+    </script>
+</body>
+
+</html>

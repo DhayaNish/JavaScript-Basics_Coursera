@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+
+<body>
+    <h1>Local and Global Scope</h1>
+    <script>
+        //Hint: 1st priority is always given to Function
+        //Global variable
+        var aVariable = "This is Global Variable";
+
+        function Local() {
+            //Local Variable
+            var aVariable = "This is Local Variable";
+            //variable decleared without var is consider  as global in JS
+            summa = "na oru global";
+            console.log(aVariable);
+        }
+        //function call
+        Local();
+        //globally accessed
+        console.log(summa);
+        //only local access
+        console.log(aVariable);
+    </script>
+</body>
+
+</html>

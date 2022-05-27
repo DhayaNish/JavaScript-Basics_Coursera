@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+
+<body>
+    <h1>JavaScript Basic Challenges 10 - 16</h1>
+    <script>
+        //challenge 10
+        function hello() {
+            console.log("Hello, and welcome!");
+        }
+        //function call
+        //hello();
+
+        //challenge 11
+        function hello(name) {
+            console.log(`Hello ${name}, and welcome!`);
+        }
+        //function call
+        //hello("nishanth");
+
+        //challenge 12
+        function name(name) {
+            console.log(`hello ${name}`);
+        }
+        //name(prompt("Enter your name", " "));
+
+
+        //challenge 13
+        function hello(name) {
+            if (name == null || name == '') {
+                console.log("you didn't give me a name");
+            } else {
+                console.log(`Hello ${name}, and welcome!`);
+            }
+        }
+        //function call
+        //hello(prompt("hello", "enter your name"));
+
+        //challenge 14
+        function hello(name) {
+            var greetings = (`Hello ${name}, and Welcome! `);
+            return greetings;
+        }
+        //function call
+        //console.log(hello(prompt("Enter your name", "")));
+
+        //challenge 15
+        var foods = ['cheese', 'fruit', 'chicken', 'desert', 'candy'];
+
+        function hello(name, foods) {
+            console.log(`Hello ${name}, and Welcome!`);
+
+            for (var i = 0; i < foods.length; i++) {
+                console.log(`${name},would you like some ${foods[i]} `);
+            }
+        }
+        //function call
+        //hello(prompt("Enter your name", ""), foods);
+
+        //challenge 16
+        var foods = ['cheese', 'fruit', 'chicken', 'desert', 'candy'];
+
+        function hello(name, foods) {
+            console.log(`Hello ${name}, and Welcome!`);
+            var randomNum = Math.random(foods[i]);
+            for (var i = 0; i < foods.length; i++) {
+                console.log(`${name},would you like some ${randomNum} `);
+            }
+        }
+        //function call
+        hello(prompt("Enter your name", ""), foods);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <h1>Functions in JavaScript passing data</h1>
+    <script>
+        //function decleration , passing one data
+        function upperMessage(message) {
+            var upperMessage = message.toUpperCase();
+            console.log(upperMessage);
+        }
+        //function calling
+        upperMessage("hello everyone!");
+
+        //Another example passing two datas
+        function sum(num1, num2) {
+            var sum = num1 + num2;
+            console.log(sum);
+        }
+        //function calling 
+        sum(2, 4);
+
+        //Another example passing two datas
+        function checkSum(num1, num2) {
+            var sum = num1 + num2;
+            return sum;
+        }
+        //function calling 
+        cosnole.log(checkSum(6, 8));
+    </script>
+
+</body>
+
+</html>

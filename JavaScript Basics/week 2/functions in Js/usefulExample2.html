@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+
+<body>
+    <h1>Random Functions step 2 - 4</h1>
+    <script>
+        //Random math function
+        console.log(Math.random());
+
+        //function decleration
+        function randomInt(min, max) {
+            var numOfValues = max - min + 1;
+
+            //random values
+            var randomNum = Math.random();
+            var randomVal = randomNum * numOfValues;
+            console.log(randomVal);
+
+            //rounded random values
+            var roundedRandomVal = Math.floor(randomVal);
+            console.log(roundedRandomVal);
+
+            //rounded value + minimum number
+            var finalNum = min + roundedRandomVal;
+            console.log(finalNum);
+        }
+
+        //function call
+        randomInt(5, 10);
+    </script>
+
+</body>
+
+</html>

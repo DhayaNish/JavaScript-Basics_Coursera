@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+
+<body>
+    <h1>Random Functions step 5</h1>
+    <script>
+        var foods = ['cheese', 'mango', 'lemon', 'apple', 'grapes'];
+
+        //function decleration
+        function randomInt(min, max) {
+            var numOfValues = max - min + 1;
+
+            //random values
+            var randomNum = Math.random();
+            var randomVal = randomNum * numOfValues;
+
+            //rounded random values
+            var roundedRandomVal = Math.floor(randomVal);
+
+            //rounded value + minimum number
+            var finalNum = min + roundedRandomVal;
+            return finalNum;
+
+            //creating a random integer from min and max
+            return Math.floor((max - min + 1) * Math.random()) + min;
+        }
+
+        //function call
+        console.log(foods[randomInt(0, 3)]);
+    </script>
+
+</body>
+
+</html>

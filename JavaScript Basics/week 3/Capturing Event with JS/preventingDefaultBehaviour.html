@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Basics</title>
+</head>
+
+<body>
+    <h1>Prevent Default Behaviour</h1>
+    <a href="http://google.com">Go to google</a>
+    <script>
+        var btn = document.querySelector("a");
+        //function decleration
+        btn.addEventListener("click", function(event) {
+            //preventing the action
+            //try this by comment event.preventDefault();
+            event.preventDefault();
+            alert("Sorry, Don't go to Google!");
+            console.log("working");
+        });
+    </script>
+</body>
+
+</html>

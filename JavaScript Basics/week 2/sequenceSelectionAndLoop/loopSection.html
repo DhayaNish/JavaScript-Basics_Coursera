@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>Loop Section</title>
+</head>
+
+<body>
+    <h1>Loop Section</h1>
+    <Script>
+        //variable Decleration
+        var foods = ['cheese', 'grapes', 'apple', 'mango'];
+        var myString = "I am really hungry for some food";
+        console.log(`${myString} ${foods} \n`);
+
+        //Another method using FOR LOOP
+        for (var i = 0; i < foods.length; i++) {
+            var remainder = i % 2;
+            if (remainder == 0) {
+                var foodUpper = foods[i].toUpperCase();
+                console.log(`${myString} ${foodUpper} \n`);
+            } else {
+                console.log(`${myString} ${foods[i]} \n`);
+            }
+
+        }
+    </Script>
+</body>
+
+</html>

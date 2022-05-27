@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenges</title>
+</head>
+
+<body>
+    <h1>Challenge 22 - 30</h1>
+
+    <p>Here is my first paragraph of text</p>
+    <p>Here is my second paragraph of text</p>
+    <p>Here is my third paragraph of text</p>
+    <div>
+        <p>Here is my replacing parah</p>
+    </div>
+
+    <button>Turn Green Dammit!</button>
+    <script>
+        //challenge 22 & 23
+        var btn = document.querySelector('button');
+        var par = document.querySelectorAll('p');
+        btn.addEventListener('click', function() {
+            for (var i = 0; i < par.length; i++) {
+                par[i].style.color = "green";
+            }
+        });
+
+        //challenge 24
+        //creating new paragraph
+        var myTag = document.createElement('p');
+        //assign text to our created paragraph
+        var myText = document.createTextNode(" Hi i'm a new paragraph");
+        //adding text by using append in the paragraph
+        myTag.appendChild(myText);
+
+        //calling whole content under the div tag
+        var myDiv = document.querySelector('div');
+        myDiv.appendChild(myTag);
+
+        //challenge 25
+    </script>
+</body>
+
+</html>

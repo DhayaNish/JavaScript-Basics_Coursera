@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing Element</title>
+</head>
+
+<body>
+    <h1>Removing Elements </h1>
+    <div>
+        <p>hi this is my first tag</p>
+        <p>this is my removing tag</p>
+    </div>
+    <script>
+        var remove = document.querySelector('div');
+        //removing the 1st index child
+        remove.removeChild(remove.children[1]);
+        //checking in console
+        console.log("removed");
+    </script>
+</body>
+
+</html>

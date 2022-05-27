@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Destinations WishList</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>vacation Destination WishList</h1>
+        <p>Found exciting places to visit on your next vacation?</br> use the form below to add them to your WishList.</p>
+    </header>
+    <main>
+        <form id="destination_details_form">
+
+            <label for="name">Destinstion Name</label>
+            <input type="text" id="name" placeholder="provide a name for the destination" required>
+
+            <label for="location">Destinstion Location</label>
+            <input type="text" id="location" placeholder="where is this destination located" required>
+
+            <label for="photo">Photo</label>
+            <input type="url" id="photo" placeholder="provide a URL for a photo">
+
+            <label for="description">Destinstion Description</label>
+            <textarea id="description" placeholder="Describe the destination"></textarea>
+
+            <button type="submit">Add to List</button>
+        </form>
+
+        <article>
+            <h2 id="title">Enter Destination Deatils</h2>
+            <div id="destinations_container">
+                <!-- Dynamically populated by JavaScript -->
+                <!-- <div class="card">
+                    <img src="images/signpost.jpg" alt="Image">
+                    <div class="card-body">
+                        <h3>Destination Name</h3>
+                        <h4>Destination Location</h4>
+                        <p class="card-text"> Destination description</p>
+                        <button>Remove</button>
+                    </div>
+                </div> -->
+            </div>
+
+        </article>
+    </main>
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

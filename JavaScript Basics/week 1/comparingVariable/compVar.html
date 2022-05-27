@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>Comparing Variable</title>
+</head>
+
+<body>
+    <h1>Comparing Variable</h1>
+    <Script>
+        //Variable Decleration
+
+        var red = "true";
+        var blue = "false";
+        var green;
+        var num = 6;
+        var myNum = 5;
+        var age = "6";
+        var notNum = "chicken";
+        var myValue = notNum - myNum;
+
+        // > , < , >= , <= , == , != 
+
+        if (num != myNum) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+        //ANS = "True". Because, Javascript using Type conversion.
+
+        /*    if (num == age) {
+                console.log("true");
+            } else {
+                console.log("false");
+            }
+        */
+
+        //ANS = "False". Because,it does not perform type conversion (it compare string with number).
+
+        /*    if (num === age) {
+                console.log("true");
+            } else {
+                console.log("false");
+            }
+        */
+
+        //ANS = "NaN".Not a Number.
+
+        /*    if (myValue) {
+                console.log("true");
+            } else {
+                console.log("false");
+                console.log(myvalue);
+            }
+        */
+    </Script>
+</body>
+
+</html>

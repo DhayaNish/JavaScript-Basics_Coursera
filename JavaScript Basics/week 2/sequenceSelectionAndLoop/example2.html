@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>Sequence Part 2</title>
+</head>
+
+<body>
+    <h1>Sequence Part 2</h1>
+    <Script>
+        //variable Decleration
+        var myString = "I am really hungry for some";
+        console.log(myString);
+        //toupperCase -> method . Method have paranthesis at the end
+        var myUpperString = myString.toUpperCase();
+        console.log(myUpperString);
+
+        //searching for "really" keyword
+        var reallyLocation = myString.search('really');
+        console.log(reallyLocation);
+
+        //print 6 characters + change it to uppercase
+        var specialWord = myString.substr(reallyLocation, 6);
+        specialWord = specialWord.toUpperCase();
+        console.log(specialWord);
+
+        //replace REALLY then print
+        var newString = myString.replace('really', specialWord);
+        console.log(newString);
+    </Script>
+</body>
+
+</html>

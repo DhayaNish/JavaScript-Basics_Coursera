@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 17 - 21</title>
+</head>
+
+<body>
+    <h1>Challenge 17 - 21</h1>
+
+    <h2>Page Title</h2>
+
+    <p id="challenge17">
+        Lorem ipsum dolor sit amet. Quia ratione quis assumenda qui quisquam rerum 33 quasi laboriosam.</br> Sit sint sunt sunt odit est debitis praesentium.</br> Non saepe magni quo quod suscipit non architecto dolores et voluptates molestias non similique
+        veritatis eum sunt laborum.</br> Quo iure laborum nam quod magnam et culpa perferendis non quam odio.
+    </p>
+
+    <p>
+        My Second paragraph.....
+    </p>
+
+    <p id="challenge20-1">
+        Lorem ipsum dolor sit amet. Quia ratione quis assumenda qui quisquam rerum 33 quasi laboriosam.</br> Sit sint sunt sunt odit est debitis praesentium.</br> Non saepe magni quo quod suscipit non architecto dolores et voluptates molestias non similique
+        veritatis eum sunt laborum.</br> Quo iure laborum nam quod magnam et culpa perferendis non quam odio.
+    </p>
+    <p id="challenge20-2">
+        <img src='http://meadpoint.net/images/xmasajax.jpg' alt="" title="images" /> Lorem ipsum dolor sit amet. Quia ratione quis assumenda qui quisquam rerum 33 quasi laboriosam.</br> Sit sint sunt sunt odit est debitis praesentium. Non saepe magni
+        quo quod suscipit non architecto dolores et voluptates molestias non similique veritatis eum sunt laborum.</br> Quo iure laborum nam quod magnam et culpa perferendis non quam odio.
+    </p>
+    <span>
+        Lorem ipsum dolor sit amet.
+        <a href="https://www.google.com/search?q=llames&rlz=1C1CHBF_enIN999IN999&oq=llames&aqs=chrome..69i57j0i512j0i10l8.8767j0j7&sourceid=chrome&ie=UTF-8">
+        Llamas are Cool!...</a> Quia ratione quis assumenda qui quisquam rerum 33 quasi laboriosam.</br>
+        Sit sint sunt sunt odit est debitis praesentium.</br> Non saepe magni quo quod suscipit non architecto dolores et voluptates molestias non similique
+        veritatis eum sunt laborum.</br> Quo iure laborum nam quod magnam et culpa perferendis non quam odio.
+        </span>
+
+    <script>
+        //challenge 17
+        var colorChange = document.getElementById("challenge17");
+        colorChange.style.color = "green";
+        console.log("challenge 17 working");
+
+        //challenge 18
+        var colorGreen = document.getElementsByTagName("p");
+        for (var i = 0; i < colorGreen.length; i++) {
+            colorGreen[i].style.color = "red";
+            console.log("challenge 18 working");
+        }
+
+        //challenge 19
+        var hTag = document.querySelector("h2");
+        hTag.style.color = "blue";
+        console.log("challenge 19 working");
+
+        //challenge 20
+        var challengeOne = document.getElementById("challenge20-1");
+        console.log("challenge 20-1 working");
+        var challengeTwo = document.querySelector("#challenge20-2 img");
+        console.log("challenge 20-2 working");
+
+        //challenge 21
+        var llames = document.getElementsByTagName('span');
+        console.log("challenge 21 working");
+    </script>
+</body>
+
+</html>

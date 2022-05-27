@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>Template using ` ${} `</title>
+</head>
+
+<body>
+    <h1>Template using ` ${} `</h1>
+    <Script>
+        //variable Decleration
+        var incrementor = 0;
+        var text = "";
+
+        //while Loop
+        while (incrementor < 10) {
+            //text+= -> text = text + "The...."
+            text += `The incrementor has gone up to ${incrementor} \n`;
+            incrementor++;
+        }
+        console.log(text);
+    </Script>
+</body>
+
+</html>

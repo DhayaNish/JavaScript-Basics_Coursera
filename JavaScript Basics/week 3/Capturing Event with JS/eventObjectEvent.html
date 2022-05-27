@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Basics</title>
+</head>
+
+<body>
+    <h1>event.target event/eve/"any name"</h1>
+    <button>Don't Press Me</button>
+    <script>
+        var btn = document.querySelector("button");
+        //function decleration
+        btn.addEventListener("click", function(event) {
+            event.target.style.backgroundColor = "red";
+            alert("I told you , Don't Press Me!");
+            console.log("working");
+        });
+    </script>
+</body>
+
+</html>

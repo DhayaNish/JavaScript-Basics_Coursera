@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>className</title>
+</head>
+
+<body>
+    <h1>create Element and Text Nodes</h1>
+
+    <div>
+        <p>This is my first paragraph</p>
+    </div>
+
+    <script>
+        //Creating New Paragraph 
+        var myTag = document.createElement('p');
+
+        //assign text to our created paragraph
+        var myText = document.createTextNode("Here is my new paragraph");
+        //adding text by using append in the paragraph
+        myTag.appendChild(myText);
+
+        //calling whole content under the div tag
+        var myDiv = document.querySelector('div');
+        myDiv.appendChild(myTag);
+    </script>
+</body>
+
+</html>

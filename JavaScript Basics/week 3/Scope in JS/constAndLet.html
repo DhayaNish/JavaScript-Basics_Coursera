@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope in Js</title>
+</head>
+
+<body>
+    <h1>Const and Let Scope Operators</h1>
+    <script>
+        const name = "nishanth";
+        console.log(name);
+        // name = "good boy";
+
+        //let occupies block of code . so it conatins only one time execution
+        //var contains no of time execution
+        for (let i = 0; i < 10; i++) {
+            //let used here
+            console.log(i);
+        }
+        //let used here for another time . It shows error because already block of code executed
+        console.log(`the value of i is ${i}`);
+
+        //->another example
+        //console.log(cheese);
+        //var cheese="yummy";
+        //->it shows error . because variable values assigned after console.log();
+    </script>
+</body>
+
+</html>
